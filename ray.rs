@@ -1,5 +1,6 @@
 use crate::vec3::Vec3;
 
+#[derive(Debug, Copy, Clone)]
 pub struct Ray {
     A: Vec3,
     B: Vec3,
@@ -14,7 +15,7 @@ impl Ray {
         self.A
     }
 
-    pub fn dirction(self) -> Vec3 {
+    pub fn direction(self) -> Vec3 {
         self.B
     }
 
